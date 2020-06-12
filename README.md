@@ -1,2 +1,2 @@
-# jdgosse.github.io
-Assignment 3
+# Assignment 3 - Designing for Screens
+Responsive website
