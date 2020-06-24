@@ -4,19 +4,24 @@
     <meta charset="utf-8">
     <title>Smash Ladder</title>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="sl.css">
   </head>
   <body>
-    <nav>
+    <img class="mlogo" src="svg/logo.svg" alt="SMASH LADDER text logo">
+    <nav class="topNav" id="myNav">
       <div class="logo-wrapper">
         <img class="logo" src="svg/logo.svg" alt="SMASH LADDER text logo">
       </div>
-      <ul class="links">
-        <li><a class="setup" href="#">Setup and FAQs</a></li>
-        <li><a class="rankings" href="#">Rankings</a></li>
-        <li><a class="donate" href="#">Donate</a></li>
-      </ul>
-      <a class="log-in" href="page2.html">Log In</a>
+        <ul class="links">
+          <li><a class="setup" href="#">Setup and FAQs</a></li>
+          <li><a class="rankings" href="#">Rankings</a></li>
+          <li><a class="donate" href="#">Donate</a></li>
+        </ul>
+        <a class="log-in" href="page2.html">Log In</a>
+        <!-- <a href="javascript:void(0);" class="icon" onclick="menuBar">
+          <img src="svg/menu.svg" alt="hamburger menu">
+        </a> -->
     </nav>
     <div class="banner">
     </div>
@@ -44,6 +49,17 @@
     <footer>
       <p>Smashladder © 2020 created by <a href="#">Anther</a> Twitter: <a href="#">@Anthrzy</a></p>
     </footer>
+
+    <!-- <script>
+      function menuBar(){
+        var x = document.getElementById("myNav");
+        if (x.className === "topNav"){
+          x.className += " responsive";
+        } else{
+          x.className = "topNav";
+        }
+      }
+    </script> -->
 
   </body>
 </html>
