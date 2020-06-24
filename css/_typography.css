@@ -1,0 +1,46 @@
+/* Typography */
+
+
+
+h1,h2,h3,h4,h5,h6,p,li, a, input, button{
+  font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	margin: 0;
+	font-variant-ligatures: common-ligatures; /* for up-to-date browsers, including IE10 and Opera 21 */
+	font-kerning: normal;
+	font-feature-settings: "kern" 1, "liga" 1, "pnum" 1;
+
+	/* If using white text on black, to make sharper and thinner */
+	/* Chrome, Safari */
+	-webkit-font-smoothing: antialiased;
+	/* Firefox */
+	-moz-osx-font-smoothing: grayscale;
+}
+
+nav{
+  font-size: 1.2rem;
+}
+
+h1, h2{
+  font-weight: 900;
+}
+
+h1{
+  font-size: 2rem;
+}
+
+h2{
+  font-size: 1.8rem;
+}
+
+p{
+  font-weight: 700;
+	font-size: 1.2rem;
+	line-height: 1.2;
+}
+
+a{
+	color: inherit;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+}

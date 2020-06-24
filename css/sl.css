@@ -1,0 +1,84 @@
+/* Style sheet for Smashladder */
+
+@import '_resets.css';
+@import '_typography.css';
+
+:root{
+  --black: #0f0e17;
+  --orange: #ff8906;
+  --red: #f25f4c;
+  --pink: #e53170;
+  --white: #fffffe;
+  --pcolor: #a7a9be; /* paragraph color */
+}
+
+body{
+  background-color: var(--black);
+}
+
+nav{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1.5rem;
+  color: var(--pcolor);
+  font-weight: 700;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 20% repeat(5, 1fr);
+  border: var(--red);
+}
+
+.links{
+  display: flex;
+  justify-content: space-between;
+  grid-column: 2 / span 3;
+}
+
+a:hover{
+  /* text-decoration: underline; */
+  color: var(--white);
+}
+
+ul li a{
+  display: block;
+  padding: 10px;
+}
+
+.log-in{
+  grid-column: 7;
+  display: block;
+  padding: 10px;
+}
+
+.logo{
+  height: 22px;
+}
+
+.logo-wrapper{
+  margin-top: .5rem;
+  align-content: center;
+  grid-column: 1;
+  height: 15px;
+}
+
+.banner{
+  background: url("../images/meleebanner.jpg");
+  background-size: cover;
+  min-height: 450px;
+}
+
+h1,h2{
+  margin-top: 1.5rem;
+  color: var(--white);
+  text-align: center;
+}
+
+p{
+  color: var(--pcolor);
+}
+
+.people, .chat, .tourney{
+  padding: 1.5rem;
+  display: inline-block;
+  width: 10%;
+}
