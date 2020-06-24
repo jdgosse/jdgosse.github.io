@@ -165,7 +165,7 @@ ul li a{
 }
 
 .banner{
-  background: url("../images/meleebanner.jpg");
+  background: url("images/meleebanner.jpg");
   background-size: cover;
   min-height: 400px;
 }
@@ -178,7 +178,7 @@ h1,h2{
 }
 
 .join{
-  background: url("../images/smashballbluegreyV2.png");
+  background: url("images/smashballbluegreyV2.png");
   background-size: 50%;
   background-repeat: no-repeat;
   background-position: bottom left;
