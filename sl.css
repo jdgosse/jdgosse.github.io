@@ -281,6 +281,7 @@ footer a{
 @media screen and (max-width: 600px) {
   h1 {font-size: 1.4rem;}
   h2 {font-size: 1.3rem;}
+  p {font-size: 1rem}
   .join p{padding-left: 15%; padding-right: 15%;}
   .button-wrapper{display: block; margin:auto;}
   .button-wrapper a{display:flex; align-items: center; justify-content: center; margin-left: 20%; margin-right: 20%}
