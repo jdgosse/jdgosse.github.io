@@ -1,0 +1,231 @@
+/* Style sheet for Smashladder */
+
+:root{
+  --black: #0f0e17;
+  --orange: #ff8906;
+  --red: #f25f4c;
+  --pink: #e53170;
+  --white: #fffffe;
+  --pcolor: #a7a9be; /* paragraph color */
+}
+
+/* Typography */
+
+
+
+h1,h2,h3,h4,h5,h6,p,li, a, input, button{
+  font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	margin: 0;
+	font-variant-ligatures: common-ligatures; /* for up-to-date browsers, including IE10 and Opera 21 */
+	font-kerning: normal;
+	font-feature-settings: "kern" 1, "liga" 1, "pnum" 1;
+
+	/* If using white text on black, to make sharper and thinner */
+	/* Chrome, Safari */
+	-webkit-font-smoothing: antialiased;
+	/* Firefox */
+	-moz-osx-font-smoothing: grayscale;
+}
+
+nav{
+  font-size: 1.2rem;
+}
+
+h1, h2{
+  font-weight: 900;
+}
+
+h1{
+  font-size: 2rem;
+}
+
+h2{
+  font-size: 1.8rem;
+}
+
+p{
+  font-weight: 700;
+	font-size: 1.4rem;
+	line-height: 1.2;
+}
+
+a{
+	color: inherit;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+}
+
+
+/* ------------------------------------------------------------------------------------------- */
+
+/* Resets */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+/* Buttons */
+
+button {
+  appearance:none;
+  background:transparent;
+  border:0;
+  padding:0;
+  cursor:pointer;
+  font:inherit;
+  text-align:inherit;
+}
+
+button:active,
+button:focus {
+  outline:none;
+}
+
+/* Lists */
+
+ul, ol{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* Images */
+
+img{
+	display: block;
+	width: 100%;
+}
+
+/* SVG */
+
+svg{
+	display: block;
+}
+
+
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+
+body{
+  background-color: var(--black);
+}
+
+nav{
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  padding-right: 1.5rem;
+  color: var(--pcolor);
+  font-weight: 700;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 20% repeat(5, 1fr);
+  border: var(--red);
+}
+
+.links{
+  display: flex;
+  justify-content: space-between;
+  grid-column: 2 / span 3;
+}
+
+a:hover{
+  /* text-decoration: underline; */
+  color: var(--white);
+}
+
+ul li a{
+  display: block;
+  padding: 10px;
+}
+
+.log-in{
+  grid-column: 7;
+  display: block;
+  padding: 10px;
+}
+
+.logo{
+  height: 22px;
+}
+
+.logo-wrapper{
+  margin-top: .5rem;
+  align-content: center;
+  grid-column: 1;
+  height: 15px;
+}
+
+.banner{
+  background: url("../images/meleebanner.jpg");
+  background-size: cover;
+  min-height: 400px;
+}
+
+h1,h2{
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+  color: var(--white);
+  text-align: center;
+}
+
+.join{
+  background: url("../images/smashballbluegreyV2.png");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  padding-bottom: 3rem;
+}
+
+.join p{
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+.button-wrapper{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-items: center;
+
+}
+
+.join a{
+  grid-column: 2;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 900;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 1.8rem;
+  border-radius: 10px;
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.join a:last-of-type{
+  grid-column:3;
+}
+
+p{
+  color: var(--pcolor);
+}
+
+.people, .chat, .tourney{
+  padding: 1.5rem;
+}
+
+.community img{
+  display: table;
+  margin: 0 auto;
+  width: 20%;
+}
