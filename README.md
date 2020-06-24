@@ -1,2 +1,3 @@
 # Assignment 3 - Designing for Screens
-Responsive website
+
+A redesign of the home page for the website https://www.smashladder.com/
